@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>yo man </h1>
+    
+   
+
+    
+     <% for(mydata of myData) {%>
+        <h1>ROOM NAME</h1>
+       <p><%=mydata.NAME%></p>
+       <H3>ROOM MEMBERS</H3>
+                 <% for(mydata2 of myData2) {%>
+                        <% if((mydata2.id2 == mydata.id) && (mydata2.m2=="join")){ %>
+                            <p><%=mydata2.name2%></p> 
+                       <% }  %>
+               
+                 
+                <% } %> 
+
+             <% } %> 
+        
+
+</body>
+</html>
